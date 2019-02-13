@@ -13,7 +13,7 @@ public class Movie {
 
     public Movie(JSONObject jsonObject) throws JSONException {
         this.posterUrl = jsonObject.getString("poster_path");
-        this.title = jsonObject.getString("original-title");
+        this.title = jsonObject.getString("original_title");
         this.rating = jsonObject.getDouble("vote_average");
     }
 
@@ -38,6 +38,7 @@ public class Movie {
                 e.printStackTrace();
             }
         }
+
         return results;
     }
 }
